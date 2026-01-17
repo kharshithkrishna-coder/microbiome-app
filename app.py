@@ -32,9 +32,19 @@ st.markdown("""
         font-size: 1.45rem;
         color: #2E86C1;
     }
-    /* Page background */
+    /* Page background - Force white background always */
     .main {
-        background-color: #fbfbfb;
+        background-color: white !important;
+    }
+    
+    /* Overall page background */
+    [data-testid="stAppViewContainer"] {
+        background-color: white !important;
+    }
+    
+    /* Root background */
+    .stApp {
+        background-color: white !important;
     }
     /* Sidebar styling */
     .css-1lcbmhc, [data-testid="stSidebar"] {
